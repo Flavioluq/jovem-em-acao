@@ -7,7 +7,7 @@ const accents = ["border-primary/60", "border-secondary/60", "border-highlight/6
 
 export default function RegionGrid() {
   return (
-    <section id="regioes" className="mx-auto max-w-content px-6 pb-24">
+    <section id="regioes" className="mx-auto max-w-content px-6 pb-24 pt-16">
       <div className="mb-8">
         <h2 className="font-display text-2xl font-semibold text-ink md:text-3xl">
           Escolha sua região
@@ -26,16 +26,16 @@ export default function RegionGrid() {
               accents[i % accents.length]
             } bg-surface p-5 transition-transform hover:-translate-y-1 hover:bg-surfaceAlt`}
           >
-            <span className="font-display text-xs text-muted">
+            <span className="font-display text-xs text-cardMuted">
               {String(regiao.numero).padStart(2, "0")}
             </span>
             <div>
-              <h3 className="font-display text-lg font-semibold text-ink group-hover:text-highlight">
-                {regiao.nome}
-              </h3>
-              <p className="mt-1 text-xs text-muted">
-                {regiao.bairros.length} bairros
-              </p>
+                <h3 className="font-display text-lg font-semibold text-cardInk group-hover:text-highlight">
+                  {regiao.nome}
+                </h3>
+                <p className="mt-1 text-xs text-cardMuted">
+                  {regiao.bairros.length} bairros
+                </p>
             </div>
           </Link>
         ))}

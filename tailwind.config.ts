@@ -8,15 +8,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        base: "#150E24",
-        surface: "#1E1533",
-        surfaceAlt: "#271B44",
-        border: "#34264F",
-        primary: "#8B5CF6",
-        secondary: "#F472B6",
-        highlight: "#CFFF5C",
-        ink: "#F6F3FF",
-        muted: "#B6ACD9",
+        base: "#FFF8EC",
+        ink: "#2B1B12",
+        muted: "#6B5A48",
+        border: "#EAD9C0",
+
+        surface: "#241A10",
+        surfaceAlt: "#2E2115",
+        cardBorder: "#3A2A18",
+        cardInk: "#FFF6EC",
+        cardMuted: "#E0C7A8",
+
+        primary: "#FF7A29",
+        secondary: "#FF4D6D",
+        highlight: "#fc5502",
       },
       fontFamily: {
         display: ["var(--font-display)"],
