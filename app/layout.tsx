@@ -17,7 +17,7 @@ const body = IBM_Plex_Sans({
 export const metadata: Metadata = {
   title: "Jovem em Ação",
   description:
-    "Plataforma de hiperlocalismo e liderança jovem: mapeie problemas do seu bairro, vote nas prioridades e cobre soluções junto com sua comunidade.",
+    "Plataforma de hiperlocalismo e liderança jovem: mapeie problemas do seu bairro, vote nas prioridades e veja sua comunidade transformar.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={`${display.variable} ${body.variable}`}>
-      <body className="font-body antialiased" suppressHydrationWarning>{children}</body>
+      <body className="bg-base font-body text-ink antialiased">
+        {children}
+      </body>
     </html>
   );
 }

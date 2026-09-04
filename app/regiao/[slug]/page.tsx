@@ -47,7 +47,7 @@ export default async function RegiaoPage({
         {regiao.bairros.map((bairro) => (
           <li
             key={bairro}
-            className="rounded-full border border-border bg-surface px-4 py-1.5 text-sm text-ink"
+            className="rounded-full border border-cardBorder bg-surface px-4 py-1.5 text-sm text-cardInk"
           >
             {bairro}
           </li>
@@ -55,19 +55,18 @@ export default async function RegiaoPage({
       </ul>
 
       <div className="mt-12 max-w-md rounded-lg border border-primary/40 bg-surface p-8">
-        <h2 className="font-display text-xl font-semibold text-ink">
+        <h2 className="font-display text-xl font-semibold text-cardInk">
           Entre no grupo do WhatsApp
         </h2>
-        <p className="mt-2 text-sm leading-relaxed text-muted">
-          É lá que os mapeamentos, votações e cobranças da região {regiao.nome}{" "}
+        <p className="mt-2 text-sm leading-relaxed text-cardMuted">
+          É lá que discussões, votações e possíveis resoluções da região {regiao.nome}{" "}
           acontecem. Entre e apresente o problema do seu bairro.
         </p>
         <a
           href={regiao.whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 font-display text-sm font-semibold text-base transition-opacity hover:opacity-90"
-        >
+          className="mt-6 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 font-display text-sm font-semibold text-ink transition-opacity hover:opacity-90"        >
           Entrar no grupo da região {regiao.nome}
         </a>
       </div>

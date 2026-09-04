@@ -35,7 +35,7 @@ export default function MethodologySteps() {
               <h3 className="mt-3 font-display text-lg font-semibold text-ink">
                 {step.titulo}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">
+              <p className="mt-2 text-sm leading-relaxed text-ink/80">
                 {step.texto}
               </p>
             </div>
